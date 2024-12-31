@@ -1295,7 +1295,7 @@
       <br /><br />
 
       <!--Local Events -->
-      <section class="hotel" id="hotel">
+      <section class="loc" id="loc">
         <h2 class="tourist-heading section__title" align-items="center" data-aos="fade-in">Local Events and Festival
         </h2>
 
@@ -1312,7 +1312,88 @@
           <br>
 
         </div>
+        <style>
+          /* General styling for the section */
+          .loc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+          }
+          
+          .tourist-heading {
+            margin-bottom: 10px;
+          }
+          
+          .center-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .center-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+          }
+          
+          .center-card a {
+            margin-top: 20px; /* Add space above the button */
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(20, 80, 234);
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 2px 2px 8px red;
+          }
+          
+          .center-card a:hover {
+            background-color: rgb(30, 90, 244);
+            box-shadow: 2px 2px 8px rgba(255, 0, 0, 0.7);
+          }
+          
+          /* Media query for responsiveness */
+          @media (max-width: 768px) {
+            .loc {
+              padding: 10px;
+            }
+          
+            .tourist-heading {
+              font-size: 1.5rem;
+            }
+          
+            .center-card img {
+              max-width: 90%;
+            }
+          
+            .center-card a {
+              font-size: 1rem;
+              padding: 8px 16px;
+              margin-top: 15px; /* Adjust space for medium screens */
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .tourist-heading {
+              font-size: 1.2rem;
+            }
+          
+            .center-card a {
+              font-size: 0.9rem;
+              padding: 6px 12px;
+              margin-top: 10px; /* Adjust space for small screens */
+            }
+          }
+          </style>          
       </section>
+
       <br></br>
       <!-- Toursit Guide Section -->
       <section class="tourist" id="tourist">
@@ -1404,6 +1485,7 @@
         </div>
       </section>
       <br /><br /><br />
+
       <!--Packaging List-->
       <section class="hotel" id="hotel">
         <h2 class="tourist-heading section__title" align-items="center" data-aos="fade-in">Packaging List</h2>
